@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+}
+
+/* * {
+    border: .1px solid #000;
+} */
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 375px;
+    min-height: 100vh;
+
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #364844;
+    background-color: #F7F7F7;
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 17px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #fff;
+    }
+}

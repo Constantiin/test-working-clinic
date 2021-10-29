@@ -1,0 +1,160 @@
+.header {
+    background-color: #F7F7F7;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 65px;
+    
+}
+
+.header__burger-menu {
+    display: block;
+    width: 37px;
+    height: 26px;
+    background-image: url("../img/burger.png");
+}
+
+.header-left,
+.header-right {
+    display: none;
+}
+
+.header__mobile {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.header__logo {
+    width: 62px;
+    height: 18.32px;
+}
+
+.header__phone {
+    position: relative;
+    top: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.address__city {
+    font-size: 13px;
+    line-height: 24px;
+    text-align: right;
+}
+
+@media (min-width: 520px) {
+    
+    .header__burger-menu,
+    .header__mobile {
+        display: none;
+    }
+
+    .header-left,
+    .header-right {
+        display: block;
+    }
+
+    .header__logo {
+        width: 91.04px;
+        height: 26.9px;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__address {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20.55px;
+        background-image: url("../img/location.svg");
+        background-repeat: no-repeat;
+        padding-left: 25px;
+    }
+
+    .address__city {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .address__street {
+        font-size: 14px;
+        line-height: 21px;
+        color: #868686;
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header__phone {
+        font-weight: 400;
+        background-image: url("../img/whatsapp-header.png");
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center left;
+        line-height: 30px;
+        font-size: 14px;
+        padding-left: 25px;
+        align-self: center;
+    }
+
+    .header__appointment-btn {
+        font-size: 14px;
+        background: #0DBC91;
+        border-radius: 50px;
+        line-height: 21px;
+        color: #FFFFFF;
+        width: 180px;
+    }
+
+    .header__container {
+        min-height: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .header-right {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__phone {
+        background-size: 28px;
+        background-position: center left;
+        line-height: 24px;
+        font-size: 16px;
+        padding-left: 37px;
+    }
+
+    .header__appointment-btn {
+        color: #FFFFFF;
+        width: 196px;
+        padding: 11px 23px;
+        margin-left: 35px;
+    }
+
+    .header {
+        background-color: #fff;
+    }
+    
+    .header__container {
+        min-height: 67px;
+    }
+
+}

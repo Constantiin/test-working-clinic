@@ -1,0 +1,27 @@
+nav {
+    display: none;
+}
+
+@media (min-width: 520px) {
+
+    nav {
+        display: block;
+        background-color: #1FA181;
+    }
+
+    .menu {
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    .menu__list {
+        display: flex;
+        min-height: 40px;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .menu__item {
+        display: block;
+    }
+}
