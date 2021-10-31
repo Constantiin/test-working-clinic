@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
 }
 
-/* * {
+/* {
     border: .1px solid #000;
 } */
 
@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #364844;
-    background-color: #F7F7F7;
+    background-color: #fff;
 }
 
 
@@ -60,6 +60,23 @@ address {
     max-width: 1140px;
     padding: 0 17px;
     margin: 0 auto;
+}
+
+.btn {
+    width: 196px;
+    height: 43px;
+    font-size: 14px;
+    border-radius: 50px;
+    line-height: 21px;
+    background: #0DBC91;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 1024px) {

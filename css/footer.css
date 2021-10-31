@@ -1,3 +1,64 @@
 footer {
     display: none;
 }
+
+@media (min-width: 768px) {
+    
+    footer {
+        display: block;
+        margin-top: 20px;
+        background-color: #08664F;
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 144px;
+    }
+
+    .footer__logo {
+        width: 91.04px;
+        height: 26.9px;
+    }
+
+    .footer-menu {
+        display: flex;
+        gap: 10px;
+        color: #FFFFFF;
+    }
+
+
+    .messengers__list {
+        display: flex;
+        gap: 15px;
+    }
+
+    .messengers__btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .messengers__btn_instagram {
+        background-image: url("../img/instagram.png");
+    }
+
+    .messengers__btn_whatsup {
+        background-image: url("../img/whatsapp-footer.png");
+    }
+
+    .messengers__btn_telegram {
+        background-image: url("../img/telegram.png");
+    }
+
+}
+
+@media (min-width: 1140px) {
+    footer {
+        margin-top: 100px;
+    }
+
+    .footer-menu__item:not(:first-child) {
+        margin-left: 30px;
+    }
+}

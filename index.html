@@ -32,7 +32,7 @@
             </div>
             <div class="header-right">
                 <a class="header__phone" href="tel:+78630000000">+7(863) 000 00 00</a>
-                <button class="header__appointment-btn">Записаться на прием</button>
+                <button class="header__appointment-btn btn">Записаться на прием</button>
             </div>
         </div>
 
@@ -63,48 +63,91 @@
     </nav>
 
     <main class="main">
+        <img class="main__clinic-photo" src="img/clinic.jpg" alt="Фотография клиники">
         <div class="main__container container">
             <section class="main__top">
-                <img class="main__clinic-photo" src="img/clinic.jpg" alt="Фотография клиники">
-                <div class="main__content">
-                    <h1 class="main__title">Многопрофильная клиника для детей и взрослых</h1>
-                    <div class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua</div>
+                <div class="main__content container">
+                    <div class="main__content-wrapper">
+                        <h1 class="main__title">Многопрофильная клиника для детей и взрослых</h1>
+                        <div class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua</div>
+                    </div>
                 </div>
             </section>
 
-            <section class="main__bottom"></section>
+            <section class="main__bottom container">
+                <div class="main__card card">
+                    <div class="card__content">
+                        <h2 class="card__title">Check-UP</h2>
+                        <h3 class="card__subtitle">для мужчин</h3>
+                        <ul class="card__list">
+                            <li class="card__item">Гормональный скрининг</li>
+                            <li class="card__item">Тестостерон</li>
+                            <li class="card__item">Свободный тестостерон</li>
+                            <li class="card__item">Глобулин, связывающий половые гормоны</li>
+                        </ul>
+                        <div class="card__price price">
+                            <span class="price__with-discount">Всего 2800₽</span>
+                            <span class="price__without-discount">3500₽</span>
+                        </div>
+                        <div class="main__buttons">
+                            <button class="main__order-btn btn">Записаться</button>
+                            <button class="main__detail-btn btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__control-slide">
+                    <button class="main__arrow main__arrow_left"></button>
+                    1/4
+                    <button class="main__arrow main__arrow_right"></button>
+                </div>
+            </section>
         </div>
     </main>
 
     <footer class="footer">
         <div class="footer__container container">
-            <img class="footer__logo" src="img/logo.png" alt="Логотип компании">
+            <img class="footer__logo" src="img/logo-footer.png" alt="Логотип компании">
 
-            <ul class="footer__menu menu">
-                <li class="menu__item">
-                    <a href="#" class="menu__link">О клинике</a>
+            <ul class="footer__menu-list footer-menu">
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">О клинике</a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Услуги</a>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Услуги</a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Специалисты</a>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Специалисты</a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Цены</a>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Цены</a>
                 </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">Контакты</a>
                 </li>
             </ul>
 
-            <div class="footer__messengers">
-                <a href="#" class="footer__instagram"></a>
-                <a href="#" class="footer__whatsup"></a>
-                <a href="#" class="footer__telegram"></a>
+            <div class="footer__messengers messengers">
+                <ul class="messengers__list">
+                    <li class="messengers__item">
+                        <button class="messengers__btn messengers__btn_instagram">
+                            <a href="#"></a>
+                        </button>
+                    </li>
+                    <li class="messengers__item">
+                        <button class="messengers__btn messengers__btn_whatsup">
+                            <a href="#"></a>
+                        </button>
+                    </li>
+                    <li class="messengers__item">
+                        <button class="messengers__btn messengers__btn_telegram">
+                            <a href="#"></a>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>

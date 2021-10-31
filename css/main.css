@@ -1,9 +1,15 @@
+.main__clinic-photo {
+    min-width: 375px;
+    min-height: 288px;
+    object-fit: cover;
+}
+
 .main__top {
-    position: relative;
+    background-color: #F8FBFA;
+    padding-bottom: 15px;
 }
 
 .main__title {
-    font-weight: 700;
     font-size: 26px;
     line-height: 34px;
     padding-top: 34px;
@@ -14,27 +20,23 @@
     line-height: 24px;
 }
 
-@media (min-width: 520px) {
-    .main__clinic-photo {
-        max-width: 466px;
-    }
-
-    .main__top {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.main__bottom {
+    display: none;
 }
 
 @media (min-width: 768px) {
    
-    .main__top {
-        display: flex;
-        flex-direction: row-reverse;
+    .main {
+        flex: 1 1 auto;
     }
 
-    .main__content {
-        padding-right: 15px;
+    .main__container {
+        margin-top: 10px;
+    }
+
+    .main__clinic-photo {
+        width: 100%;
+        margin-top: 9px;
     }
 
 }
@@ -42,32 +44,177 @@
 @media (min-width: 1024px) {
     
     .main__clinic-photo {
-        max-width: 700px;
-    }
-
-}
-
-@media (min-width: 1140px) {
-    
-    .main {
-        background-image: url("../img/clinic.jpg");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: 650px;
-    }
-
-    .main__clinic-photo {
         display: none;
     }
 
     .main__top {
         display: flex;
-        flex-direction: row;
-        min-height: 533px;
+        align-items: center;
+        height: 300px;
+        padding-left: 20px;
+        background-image: url("../img/clinic.jpg");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 50%;
     }
 
     .main__content {
-        max-width: 416px;
+        max-width: 380px;
+        margin-right: 650px;
+    }
+
+    .main__title {
+        font-size: 36px;
+        line-height: 47px;
+        padding-top: 0;
+    }
+
+    .main__text {
+        padding-top: 14px;
+    }
+
+    .main__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1140px;
+        height: 400px;
+        background-image: url("../img/doctor-working-table.jpg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        margin-right: 17px;
+        margin-top: 34px;
+        margin-left: 0;
+    }
+
+    .main__card {
+        align-self: flex-start;
+        position: relative;
+        max-width: 450px;
+        height: 100%;
+        background-color: #E2F0EF;
+        border-radius: 5px;
+    }
+
+    .main__card::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 100%;
+        background: #E2F0EF;
+        transform: translateX(57%) skewX(15deg);
+        transform-origin: left;
+    }
+
+    .card__content {
+        padding: 44px;
+    }
+
+    .card__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 49px;
+        text-transform: uppercase;
+    }
+
+    .card__subtitle {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+    .card__list {
+        margin-top: 16px;
+    }
+
+    .card__item {
+        line-height: 21px;
+        background-image: url("../img/circle.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 15px;
+    }
+
+    .card__item:not(:first-child) {
+        padding-top: 5px;
+    }
+
+    .card__price {
+        padding-top: 33px;
+    }
+
+    .price__with-discount {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .price__without-discount {
+        color: #868686;
+        text-decoration-line: line-through;
+    }
+
+    .main__buttons {
+        display: flex;
+        gap: 14px;
+        padding-top: 20px;
+    }
+
+    .main__detail-btn {
+        color: #0DBC91;
+        background-color: #E2F0EF;
+        border: 1px solid #0DBC91;
+        padding-left: 10px;
+    }
+
+    .main__control-slide {
+        width: 169px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        padding-top: 34px;
+    }
+
+    .main__arrow {
+        width: 34px;
+        height: 34px;
+        background-image: url("../img/arrow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .main__arrow_left {
+        left: 0;
+    }
+    
+    .main__arrow_right {
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+}
+
+@media (min-width: 1140px) {
+
+    .main__top {
+        min-height: 533px;
+    }
+
+    .main__content_container {
+        min-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .main__content-wrapper {
+        max-width: 350px;
+    }
+
+    .main__bottom {
+        margin: 91px auto 0px;
     }
 
 }
