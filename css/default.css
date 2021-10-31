@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
 }
 
-/* {
+/* * {
     border: .1px solid #000;
 } */
 
@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #364844;
-    background-color: #fff;
+    background-color: #F8FBFA;
 }
 
 

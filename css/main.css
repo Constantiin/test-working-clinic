@@ -1,3 +1,4 @@
+
 .main__clinic-photo {
     min-width: 375px;
     min-height: 288px;
@@ -5,7 +6,6 @@
 }
 
 .main__top {
-    background-color: #F8FBFA;
     padding-bottom: 15px;
 }
 
@@ -26,6 +26,14 @@
 
 @media (min-width: 768px) {
    
+    body {
+        background-color: #fff;
+    }
+
+    .main__top {
+        background-color: #F8FBFA;
+    }
+
     .main {
         flex: 1 1 auto;
     }
