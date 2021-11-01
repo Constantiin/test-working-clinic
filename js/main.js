@@ -1,24 +1,13 @@
-new Swiper(".swiper", {
+let swiper = new Swiper(".swiper", {
     navigation: {
         nextEl: ".main__arrow_right",
         prevEl: ".main__arrow_left",
         disabledClass: "main__arrow_disable"
     },
-    // breakpoints: {
-    //     480: {
-    //         grid: {
-    //             fill: "row",
-    //             rows: 2
-    //         }
-    //     },
-    //     768: {
-    //         slidesPerView: 2,
-    //         grid: {
-    //             fill: "row",
-    //             rows: 2
-    //         }
-    //     }
-    // }
+});
+
+swiper.on('slideChange', function () {
+    document.querySelector('.number-slide').textContent = swiper.realIndex+1;
 });
 
 if (window.innerWidth >= 1140) {

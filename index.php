@@ -125,20 +125,28 @@
                             </div>
                         </div>
                     </section>
+
+                    <!-- подключение файла с выборкой из базы -->
+                    <?php include('db.php') ?>
+                    <!-- перебираем в цикле строки выборки и выводим переменные в нужные места -->
+                    
+                    <!-- начало цикла -->
+                    <?php foreach ($result as $row): ?>
+
                     <section class="main__bottom container swiper-slide">
                         <div class="main__card card">
                             <div class="card__content">
-                                <h2 class="card__title">Check-UP</h2>
-                                <h3 class="card__subtitle">для женщин</h3>
+                                <h2 class="card__title"><?=$row['title']?></h2>
+                                <h3 class="card__subtitle"><?=$row['subtitle']?></h3>
                                 <ul class="card__list">
-                                    <li class="card__item">Lorem ipsum dolor sit amet.</li>
-                                    <li class="card__item">Lorem.</li>
-                                    <li class="card__item">Lorem, ipsum.</li>
-                                    <li class="card__item">Lorem ipsum dolor sit.</li>
+                                    <li class="card__item"><?=$row['option_1']?></li>
+                                    <li class="card__item"><?=$row['option_2']?></li>
+                                    <li class="card__item"><?=$row['option_3']?></li>
+                                    <li class="card__item"><?=$row['option_4']?></li>
                                 </ul>
                                 <div class="card__price price">
-                                    <span class="price__with-discount">Всего 3000</span>
-                                    <span class="price__without-discount">4000₽</span>
+                                    <span class="price__with-discount">Всего <?=$row['priceWithDiscount']?>₽</span>
+                                    <span class="price__without-discount"><?=$row['price']?>₽</span>
                                 </div>
                                 <div class="main__buttons">
                                     <button class="main__order-btn btn">Записаться</button>
@@ -146,56 +154,17 @@
                                 </div>
                             </div>
                         </div>
+
                     </section>
-                    <section class="main__bottom container swiper-slide">
-                        <div class="main__card card">
-                            <div class="card__content">
-                                <h2 class="card__title">Check-UP +</h2>
-                                <h3 class="card__subtitle">для женщин</h3>
-                                <ul class="card__list">
-                                    <li class="card__item">Lorem, ipsum.</li>
-                                    <li class="card__item">Lorem.</li>
-                                    <li class="card__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                    <li class="card__item">Lorem ipsum dolor sit amet.</li>
-                                </ul>
-                                <div class="card__price price">
-                                    <span class="price__with-discount">Всего 4000</span>
-                                    <span class="price__without-discount">5500₽</span>
-                                </div>
-                                <div class="main__buttons">
-                                    <button class="main__order-btn btn">Записаться</button>
-                                    <button class="main__detail-btn btn">Подробнее</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main__bottom container swiper-slide">
-                        <div class="main__card card">
-                            <div class="card__content">
-                                <h2 class="card__title">Check-UP</h2>
-                                <h3 class="card__subtitle">детский</h3>
-                                <ul class="card__list">
-                                    <li class="card__item">Lorem.</li>
-                                    <li class="card__item">Lorem ipsum dolor sit.</li>
-                                    <li class="card__item">Lorem, ipsum dolor.</li>
-                                    <li class="card__item">Lorem.</li>
-                                </ul>
-                                <div class="card__price price">
-                                    <span class="price__with-discount">Всего 1500</span>
-                                    <span class="price__without-discount">2000₽</span>
-                                </div>
-                                <div class="main__buttons">
-                                    <button class="main__order-btn btn">Записаться</button>
-                                    <button class="main__detail-btn btn">Подробнее</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+
+                    <?php endforeach; ?>
+                    <!-- конец цикла -->
+
                 </div>
                 
                 <div class="main__control-slide">
                     <button class="main__arrow main__arrow_left" aria-label="Предыдущий слайд"></button>
-                    1/4
+                    <p><span class="number-slide">1</span>/4</p>
                     <button class="main__arrow main__arrow_right" aria-label="Следующий слайд"></button>
                 </div>
             </div>
