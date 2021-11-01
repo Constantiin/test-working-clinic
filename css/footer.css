@@ -53,11 +53,14 @@ footer {
 
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1024px) {
     footer {
         margin-top: 100px;
     }
+}
 
+@media (min-width: 1140px) {
+    
     .footer-menu__item:not(:first-child) {
         margin-left: 30px;
     }

@@ -177,6 +177,13 @@
         padding-left: 10px;
     }
 
+    .main__slider {
+        position: relative;
+        max-width: 1175px;
+        margin: 0 auto;
+        
+    }
+
     .main__control-slide {
         width: 169px;
         display: flex;
@@ -202,6 +209,11 @@
     .main__arrow_right {
         right: 0;
         transform: rotate(180deg);
+    }
+
+    .main__arrow_disable {
+        opacity: 0.3;
+        pointer-events: none;
     }
 
 }
