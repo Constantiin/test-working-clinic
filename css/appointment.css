@@ -1,11 +1,12 @@
 .overlay {
-    position: absolute;
+    position: fixed;
     top: -150%;
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     z-index: 5;
+    overflow: auto;
 
     transition: top 1s;
 }
