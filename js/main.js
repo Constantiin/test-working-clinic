@@ -27,10 +27,20 @@ if (window.innerWidth >= 1140) {
 }
 
 let mobileMenu = document.querySelector('.mobile-menu');
-document.addEventListener('click', getMenu);
+let overlay = document.querySelector('.overlay');
 
-function getMenu(event) {
+document.addEventListener('click', getActive);
+
+function getActive(event) {
     if (event.target.closest('.header__burger-menu')) {
         mobileMenu.classList.toggle('mobile-menu_active');
+    } else if (
+            event.target.closest('.header__appointment-btn') ||
+            event.target.closest('.mobile-menu__appointment-btn') ||
+            event.target.closest('.main__order-btn')
+        ) {
+        overlay.classList.toggle('overlay_active');
+    } else if (event.target.closest('.overlay') && !event.target.closest('.appointment')) {
+        document.querySelector('.overlay').classList.remove('overlay_active')
     }
 }

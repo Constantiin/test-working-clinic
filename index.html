@@ -248,6 +248,60 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="appointment">
+            <h2 class="appointment__title">Заполните форму и мы свяжемся с вами</h2>
+
+            <form class="appointment__form callback" action="#">
+
+                <label class="callback__label">
+                    <span class="callback__label-text">Имя:</span>
+                    <input class="callback__input" type="text" name="name" required>
+                </label>
+
+                <fieldset class="callback__group gender">
+                    <legend class="gender__title">Пол:</legend>
+                    <label class="gender__label">
+                        <span class="gender__text">Мужчина</span>
+                        <input class="gender__radio" type="radio" name="gender" value="man">
+                    </label>
+                    <label class="gender__label">
+                        <span class="gender__text">Женщина</span>
+                        <input class="gender__radio" type="radio" name="gender" value="woman">
+                    </label>
+                </fieldset>
+
+                <label class="callback__label">
+                    <span class="callback__label-text">Возраст:</span>
+                    <input class="callback__input" type="number" name="age">
+                </label>
+
+                <label class="callback__label">
+                    <span class="callback__label-text">Телефон:</span>
+                    <input type="tel" class="callback__input" name="phone" placeholder="ваш номер телефона" required>
+                </label>
+
+                <fieldset class="callback__group connect">
+                    <legend class="connect__title">Где удобнее связаться?</legend>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="call">
+                        <span class="connect__text">Позвонить</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="telegram">
+                        <span class="connect__text">Телеграм</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="whatsup">
+                        <span class="connect__text">Whatsup</span>
+                    </label>
+                </fieldset>
+
+                <button class="callback__btn btn" type="submit">Заказать обратную связь</button>
+            </form>
+        </div>
+    </div>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
