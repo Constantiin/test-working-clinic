@@ -25,3 +25,12 @@ if (window.innerWidth >= 1140) {
     document.querySelector('.main__container').classList.remove('container')
     document.querySelector('.main__content').classList.add('main__content_container')
 }
+
+let mobileMenu = document.querySelector('.mobile-menu');
+document.addEventListener('click', getMenu);
+
+function getMenu(event) {
+    if (event.target.closest('.header__burger-menu')) {
+        mobileMenu.classList.toggle('mobile-menu_active');
+    }
+}

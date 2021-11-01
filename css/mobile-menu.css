@@ -1,0 +1,28 @@
+.mobile-menu {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #45927F;
+    opacity: .9;
+    padding: 48px 0 0 19px;
+    color: #fff;
+    line-height: 24px;
+
+    left: -100%;
+    transition: left .3s;
+}
+
+.mobile-menu_active {
+    left: 0;
+}
+
+.mobile-menu__item:not(:first-child) {
+    padding-top: 10px;
+}
+
+.mobile-menu__appointment-btn {
+    margin-top: 39px;
+    background-color: #fff;
+    color: #1FA181;
+    font-weight: 700;
+}

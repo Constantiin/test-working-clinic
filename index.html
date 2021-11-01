@@ -34,7 +34,9 @@
             </div>
             <div class="header-right">
                 <a class="header__phone" href="tel:+78630000000">+7(863) 000 00 00</a>
-                <button class="header__appointment-btn btn">Записаться на прием</button>
+                <button class="header__appointment-btn btn" aria-label="Кнопка записи на приём">
+                    Записаться на прием
+                </button>
             </div>
         </div>
 
@@ -63,6 +65,30 @@
             </div>
         </div>
     </nav>
+
+    <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">О клинике</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Услуги</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Специалисты</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Цены</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Контакты</a>
+            </li>
+        </ul>
+        
+        <button class="mobile-menu__appointment-btn btn" aria-label="Кнопка записи на приём">
+            Записаться на прием
+        </button>
+    </div>
 
     <main class="main">
         <img class="main__clinic-photo" src="img/clinic.jpg" alt="Фотография клиники">
