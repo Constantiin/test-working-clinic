@@ -34,20 +34,21 @@ footer {
         gap: 15px;
     }
 
-    .messengers__btn {
+    .messengers__link {
+        display: block;
         width: 35px;
         height: 35px;
     }
 
-    .messengers__btn_instagram {
+    .messengers__link_instagram {
         background-image: url("../img/instagram.png");
     }
 
-    .messengers__btn_whatsup {
+    .messengers__link_whatsup {
         background-image: url("../img/whatsapp-footer.png");
     }
 
-    .messengers__btn_telegram {
+    .messengers__link_telegram {
         background-image: url("../img/telegram.png");
     }
 

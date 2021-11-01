@@ -1,19 +1,16 @@
 .overlay {
-    /* display: none; */
     position: absolute;
     top: -150%;
     right: 0;
     left: 0;
-    /*  */
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     z-index: 5;
 
-    transition: all 1s;
+    transition: top 1s;
 }
 
 .overlay_active {
-    /* display: block; */
     top: 0;
     bottom: 0;
 }
