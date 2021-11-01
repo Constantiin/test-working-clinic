@@ -297,6 +297,7 @@
                 </fieldset>
 
                 <button class="callback__btn btn" type="submit">Заказать обратную связь</button>
+                <button class="callback__btn btn" type="reset">Очистить форму</button>
             </form>
         </div>
     </div>
