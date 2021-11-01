@@ -12,7 +12,6 @@
 
 </head>
 <body>
-
     <header class="header">
         <div class="header__container container">
             <button class="header__burger-menu" aria-label="Меню"></button>
@@ -252,7 +251,7 @@
         <div class="appointment">
             <h2 class="appointment__title">Заполните форму и мы свяжемся с вами</h2>
 
-            <form class="appointment__form callback" action="#">
+            <form class="appointment__form callback" action="sendmail.php" method="post">
 
                 <label class="callback__label">
                     <span class="callback__label-text">Имя:</span>
