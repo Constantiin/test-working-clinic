@@ -91,7 +91,13 @@
     </div>
 
     <main class="main">
-        <img class="main__clinic-photo" src="img/clinic.jpg" alt="Фотография клиники">
+        
+        <picture class="main__clinic-photo">
+            <source srcset="img/clinic.avif" type="image/avif">
+            <source srcset="img/clinic.webp" type="image/webp">
+            <img src="img/clinic.jpg" alt="Фотография клиники">
+        </picture>
+        
         <div class="main__container container">
             <section class="main__top">
                 <div class="main__content container">
